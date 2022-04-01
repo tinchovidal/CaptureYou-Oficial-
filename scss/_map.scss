@@ -1,0 +1,30 @@
+$esteticaPrincipal: (
+       backgroundPrimario: violet,
+       backgroundSecundario: black,
+       backgroundAgregado: blue,
+       colorFijo: red,
+       colorAgregado: #6FB2D2
+);
+
+
+@each $estetica, $nosotros in $esteticaPrincipal{
+	.#{$estetica}{
+		color: $nosotros;
+	}
+}      
+
+$paisajes:(
+    color:white,
+    centro:center,
+    tamFont:10px,
+    margin:0px,
+    padding:0px
+);
+
+footer{
+       color: map-get($paisajes, color);
+       justify-content: map-get($paisajes, centro);
+       font-size: map-get($paisajes, tamFont);
+       margin: map-get($paisajes, margin);
+       padding: map-get($paisajes, padding);
+}

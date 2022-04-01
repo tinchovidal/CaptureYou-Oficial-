@@ -1,0 +1,9 @@
+@mixin nuevaEstetica($color, $background, $tamFont){
+	color: $color;
+	background-color: $background;
+	font-size: $tamFont;
+}
+
+p{
+	@include nuevaEstetica(black, #6FB2D2, 20px);
+}

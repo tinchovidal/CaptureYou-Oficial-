@@ -1,0 +1,34 @@
+.logoImg {
+
+	width: 100px;
+	height: 100px;
+}
+
+.nav-link {
+
+	font-size: 30px;
+	color: $colorPrimario;
+	font-family: $ff-secundaria;
+}
+
+.nav-item {
+	font-size: 30px;
+	color: $colorPrimario;
+	font-family: $ff-secundaria;
+}
+
+nav {
+	background-color: $bgSecundario;
+	ul{
+		display: flex;
+		li{
+			text-decoration: none;
+			a {
+				color: $colorSecundario;
+				&:hover{
+					color: $colorAgregado;
+				}
+			}
+		}
+	}
+}
